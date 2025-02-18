@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {   
     res.send("To jest przykładowe API sklepu internetowego");
 })
+app.get("/users", (req, res) => {
+    res.send(users);
+})
 app.get("/users/:id", (req, res) => {
     const { id } = req.params.id;
     res.send(id)

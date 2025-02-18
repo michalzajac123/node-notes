@@ -1,0 +1,15 @@
+### Get all users
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe"
+}
+
+### Delete a user by ID
+DELETE http://localhost:3000/users/
+Content-Type: application/json
