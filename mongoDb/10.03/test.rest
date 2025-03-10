@@ -1,0 +1,40 @@
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{
+  "carBand": "Audi",
+  "model": "X5",
+  "carYear": 2020,
+  "mileage": 10000,
+  "fuel": "diesel",
+  "RegistrationNumber": "1234"
+}
+
+###
+GET http://localhost:3000/cars
+
+###
+GET http://localhost:3000/cars/63d
+
+###
+
+DELETE http://localhost:3000/cars
+Content-Type: application/json
+
+{
+    "id":"67ceb364709f611db4a2b5fe"
+}
+
+###
+PUT http://localhost:3000/cars
+Content-Type: application/json
+
+{
+    "id":"67ceb5aa89992cedbf2b3cb9",
+    "carBand": "Audi",
+    "model": "X5",
+    "carYear": 2020,
+    "mileage": 10000,
+    "fuel": "Bensin",
+    "RegistrationNumber": "1234"
+}
