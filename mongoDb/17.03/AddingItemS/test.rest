@@ -1,0 +1,19 @@
+GET http://localhost:5000/api/items
+###
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+  "name": "item1"
+}
+
+###
+PUT http://localhost:5000/api/items/67d7e716767eb17a74167566
+Content-Type: application/json
+
+{
+  "name": "item1changed"
+}
+
+###
+DELETE http://localhost:5000/api/items/1
