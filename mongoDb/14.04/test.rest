@@ -1,0 +1,49 @@
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+  "username": "testseuser",
+  "email":"coss@gmail.com",
+  "password": "testpassword"
+}
+###
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email": "coss@gmail.com",
+    "password": "testpassword"
+}
+
+###
+
+GET http://localhost:3000/dish/dishes
+
+###
+
+POST http://localhost:3000/dish/dishes
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmNjMjQ5MTQ3YjdhMjhlOTViZTVmMyIsImlhdCI6MTc0NDYxODMyNCwiZXhwIjoxNzQ0NjIxOTI0fQ.k1wtbPSiJ2ZMd6XEJpXKeYUf7D-EwX32LqCwMxzKXDQ
+Content-Type: application/json
+
+{
+    "name": "test dish",
+    "description": "test description",
+    "price": 10.99,
+    "category": "test category"
+}
+###
+PUT http://localhost:3000/dish/dishes/67fcc49237368df192838520
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmNjMjQ5MTQ3YjdhMjhlOTViZTVmMyIsImlhdCI6MTc0NDYxODMyNCwiZXhwIjoxNzQ0NjIxOTI0fQ.k1wtbPSiJ2ZMd6XEJpXKeYUf7D-EwX32LqCwMxzKXDQ
+Content-Type: application/json
+
+{
+    "name": "test dishdddddddd",
+    "description": "test description",
+    "price": 10.99,
+    "category": "test category"
+}
+
+###
+DELETE http://localhost:3000/dish/dishes/67fcc49237368df192838520
+Authorization:  bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmNjMjQ5MTQ3YjdhMjhlOTViZTVmMyIsImlhdCI6MTc0NDYxODMyNCwiZXhwIjoxNzQ0NjIxOTI0fQ.k1wtbPSiJ2ZMd6XEJpXKeYUf7D-EwX32LqCwMxzKXDQ

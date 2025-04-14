@@ -1,0 +1,29 @@
+###rejsetracja nowego usera
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "username": "BartekBaryka",
+    "password": "CzeskaSauna1234!"
+}
+
+###
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "username": "BartekBaryka",
+    "password": "CzeskaSauna1234!"
+}
+
+### bez tokenu
+
+GET http://localhost:3000/api/protected
+
+### z tokenem
+
+GET http://localhost:3000/api/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjM5N2Y0MGM2YjA3ZTE3NTFkOTkwMCIsImlhdCI6MTc0NDAxNzQzNCwiZXhwIjoxNzQ0MDIxMDM0fQ.GS7lLQYnxMNDOZXW9uPH-vbCqaUBjC-67AlUEQX9dX4
+
