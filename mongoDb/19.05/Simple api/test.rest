@@ -1,0 +1,8 @@
+POST http://localhost:3000/ads
+Content-Type: application/json 
+
+{
+    "title": "Ogłoszenie testowe",
+    "description": "To jest testowe ogłoszenie",
+    "price": 100
+}
